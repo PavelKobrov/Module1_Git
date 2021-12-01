@@ -40,4 +40,17 @@ public class Calculator {
     public double sub(double a, double b) {
         return a - b;
     }
+
+    //multiple
+    public int multiple(int a, int b) { return a * b;    }
+
+    public double multiple(String a, String b) {
+        return multiple(Double.valueOf(a), Double.valueOf(b));
+    }
+
+    public double multiple(int a, String b) { return multiple(a, Double.valueOf(b)); }
+
+    public double multiple(String a, int b) { return multiple(Double.valueOf(a), b); }
+
+    public double multiple(double a, double b) { return a * b; }
 }
