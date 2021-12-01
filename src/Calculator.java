@@ -56,4 +56,10 @@ public class Calculator {
     public int squared(int a) { return a*a;}
     public double squared(String a) {return squared(Double.parseDouble(a));}
     public double squared(double a) { return a*a; }
+
+    //sqrt
+    public double sqrt(int a) { return Math.sqrt(a);}
+    public double sqrt(String a) {return sqrt(Double.parseDouble(a));}
+    public double sqrt(double a) { return Math.sqrt(a); }
+
 }
