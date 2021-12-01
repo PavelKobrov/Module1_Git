@@ -50,4 +50,10 @@ public class Calculator {
     public double div(int a, String b) { return multiple(a, Double.parseDouble(b)); }
     public double div(String a, int b) { return multiple(Double.parseDouble(a), b); }
     public double div(double a, double b) { return a / b; }
+
+    //squared
+
+    public int squared(int a) { return a*a;}
+    public double squared(String a) {return squared(Double.parseDouble(a));}
+    public double squared(double a) { return a*a; }
 }

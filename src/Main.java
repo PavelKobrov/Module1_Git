@@ -9,14 +9,19 @@ public class Main {
         int a = scn.nextInt();
         System.out.println("Enter operation");
         String operation = scn.next();
-        System.out.println("Enter number two");
-        int b = scn.nextInt();
-        switch (operation) {
-            case "sum" -> System.out.println(calculator.sum(a, b));
-            case "sub" -> System.out.println(calculator.sub(a, b));
-            case "multiple" -> System.out.println(calculator.multiple(a, b));
-            case "div" -> System.out.println(calculator.div(a, b));
-            default -> System.out.println("Invalid operation");
+        if (operation.equals("squared")) {
+            System.out.println(calculator.squared(a));
+        }
+        else {
+            System.out.println("Enter number two");
+            int b = scn.nextInt();
+            switch (operation) {
+                case "sum" -> System.out.println(calculator.sum(a, b));
+                case "sub" -> System.out.println(calculator.sub(a, b));
+                case "multiple" -> System.out.println(calculator.multiple(a, b));
+                case "div" -> System.out.println(calculator.div(a, b));
+                default -> System.out.println("Invalid operation");
+            }
         }
     }
 }
