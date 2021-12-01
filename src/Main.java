@@ -12,17 +12,11 @@ public class Main {
         System.out.println("Enter number two");
         int b = scn.nextInt();
         switch (operation) {
-            case "sum":
-                System.out.println(calculator.sum(a, b));
-                break;
-            case "sub":
-                System.out.println(calculator.sub(a,b));
-                break;
-            case "multiple":
-                System.out.println(calculator.multiple(a,b));
-                break;
-            default:
-                System.out.println("Invalid operation");
+            case "sum" -> System.out.println(calculator.sum(a, b));
+            case "sub" -> System.out.println(calculator.sub(a, b));
+            case "multiple" -> System.out.println(calculator.multiple(a, b));
+            case "div" -> System.out.println(calculator.div(a, b));
+            default -> System.out.println("Invalid operation");
         }
     }
 }
