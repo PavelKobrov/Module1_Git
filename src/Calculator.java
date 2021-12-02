@@ -66,4 +66,7 @@ public class Calculator {
 
     //abs
     public double abs(int a) { return Math.abs(a);}
+
+    //pow
+    public double pow(int a, int b) { return Math.pow(a,b);}
 }
