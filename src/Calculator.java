@@ -61,6 +61,9 @@ public class Calculator {
     public double sqrt(int a) { return Math.sqrt(a);}
     public double sqrt(String a) {return sqrt(Double.parseDouble(a));}
     public double sqrt(double a) { return Math.sqrt(a); }
-    //sqrt
+    //sin
     public double sin(int a) { return Math.sin(a);}
+
+    //abs
+    public double abs(int a) { return Math.abs(a);}
 }
