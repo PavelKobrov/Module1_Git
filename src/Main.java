@@ -14,23 +14,17 @@ public class Main {
                 3. div
                 4. multiple
                 5. squared
-                6. Sqrt""");
+                6. sqrt""");
         String operation = scn.next();
-        switch (operation) {
-            case "squared" -> System.out.println(calculator.squared(a));
-            case "sqrt" -> System.out.println(calculator.sqrt(a));
-            default -> {
-                System.out.println("Enter number two");
-                int b = scn.nextInt();
-                switch (operation) {
-                    case "sum" -> System.out.println(calculator.sum(a, b));
-                    case "sub" -> System.out.println(calculator.sub(a, b));
-                    case "multiple" -> System.out.println(calculator.multiple(a, b));
-                    case "div" -> System.out.println(calculator.div(a, b));
-                    default -> System.out.println("Invalid operation");
-                }
-            }
+
+        if (operation.equals("squared") || operation.equals("sqrt")) {
+            System.out.println(calculator.result(a, 0, operation));
+        } else {
+            System.out.println("Enter number two");
+            int b = scn.nextInt();
+            System.out.println(calculator.result(a, b, operation));
         }
+
     }
 
 }
