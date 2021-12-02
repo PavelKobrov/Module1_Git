@@ -69,4 +69,5 @@ public class Calculator {
 
     //pow
     public double pow(int a, int b) { return Math.pow(a,b);}
+    public double pow(double a, double b) { return Math.pow(a,b);}
 }
