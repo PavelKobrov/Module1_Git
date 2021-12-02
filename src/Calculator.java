@@ -66,4 +66,6 @@ public class Calculator {
 
     //abs
     public double abs(int a) { return Math.abs(a);}
+    //tan
+    public double tan(int a) { return Math.tan(a);}
 }
