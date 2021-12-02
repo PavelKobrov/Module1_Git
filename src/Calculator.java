@@ -34,7 +34,7 @@ public class Calculator {
     }
 
     //multiple
-    public int multiple(int a, int b) { return a * b;    }
+    public int multiple(int a, int b, int c) { return a * b*c;    }
     public double multiple(String a, String b) {
         return multiple(Double.parseDouble(a), Double.parseDouble(b));
     }
