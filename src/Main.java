@@ -16,7 +16,6 @@ public class Main {
                 5. squared
                 6. sqrt""");
         String operation = scn.next();
-
         if (operation.equals("squared") || operation.equals("sqrt")) {
             System.out.println(calculator.result(a, 0, operation));
         } else {
